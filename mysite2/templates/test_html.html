@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3> for 循环演示</h3>
+    <ul>
+        {% for i in lst %}
+            <li> {{ forloop.counter0 }} 城市名: {{ i }}</li>
+{#            {% if forloop.last %}#}
+        {% empty %}
+            <li>暂时无数据</li>
+        {% endfor %}
+    </ul>
+
+    {#    注意空格#}
+    <h3>lst = {{ lst }}</h3>
+    <h3>lst 第一个元素 {{ lst.0 }}</h3>
+    <h3>str = {{ str }}</h3>
+    <h3>dict = {{ d }}</h3>
+    <h3>dict['age'] = {{ d.age }}</h3>
+    <h3>function = {{ say_hi }}</h3>
+    <h3>class_obj = {{ class_obj.say }}</h3>
+</body>
+</html>
